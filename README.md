@@ -1,2 +1,2 @@
 # E_commerce_DoAn1
-Đồ án website bán quần áo có sử dụng chatbot
+Xây dựng website bán quần áo, phụ kiện thời trang với chatbot tư vấn
