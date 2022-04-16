@@ -8,6 +8,29 @@
     box-sizing: inherit;
 }
 
+/* 100% = 16 px => 62.5% = 10px */
+
 html {
-    font-size: 62.5%;
+    font-size: 62.5%; 
+    /*  chiều cao dòng chữ */
+    /* 1.6 rem sẽ lấy kích thước font chữ của phần tử html gốc là 62.5% = 1 rem */
+    line-height: 1.6rem; 
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex; 
+    /* các thành phần con trong thành phần cha chứa display: flex sẽ nằm ngang trên cùng 1 hàng */
+    flex-wrap: wrap;
 }
