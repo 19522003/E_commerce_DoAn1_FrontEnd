@@ -34,3 +34,14 @@ html {
     /* các thành phần con trong thành phần cha chứa display: flex sẽ nằm ngang trên cùng 1 hàng */
     flex-wrap: wrap;
 }
+
+/* Animation */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
