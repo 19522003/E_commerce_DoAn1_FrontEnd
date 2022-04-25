@@ -25,6 +25,8 @@ html {
     box-sizing: border-box;
 }
 
+
+/* Responsive */
 .grid {
     width: 1200px;
     max-width: 100%;
@@ -39,6 +41,20 @@ html {
     display: flex; 
     /* các thành phần con trong thành phần cha chứa display: flex sẽ nằm ngang trên cùng 1 hàng */
     flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.grid__column-2 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 16.6667%;
+}
+
+.grid__column-10 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 83.3334%;
 }
 
 /* Animation */
@@ -105,10 +121,11 @@ html {
     outline: none;
     cursor: pointer;
     color: var(--text-color);
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     line-height: 1.6rem;
+    background-color: white;
 }
 
 .btn.btn--normal:hover {
@@ -119,6 +136,36 @@ html {
     height: 32px;
     font-size: 12px;
     padding: 0 8px;
+}
+
+/* Selection */
+
+.select-input {
+    min-width: 200px;
+    height: 34px;
+    padding: 0 12px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.select-input__list {
+    position: absolute;
+    left: 0;
+    right : 0;
+    top: 100%;
+    border-radius: 2px;
+    background-color: white;
+}
+
+.select-input__icon {
+    font-size: 1.4rem;
+    color: rgb(131,131,131);
+    position: relative;
+    top: 1px;
 }
 
 .fa-google {
